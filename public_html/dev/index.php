@@ -15,37 +15,27 @@
       <center>
     <h1>Hello, world!</h1>
     <?php
-        include "../../private_html/dev/php_files/track.php";
-        echo "<br>";
-        for ($i=1; $i <= 100 ; $i++) {
-            $x = TRUE;
-            if (fmod($i,3) == 0){
-                echo " fizz ";
-                $x = FALSE;
-            }
-            if (fmod($i,5) == 0){
-                echo " buzz ";
-                $x = FALSE;
-            }
-            if ($x) {
-                echo $i;
-            }
-            echo "<br>";
-        }
+    include "../../private_html/dev/php_files/track.php";
+    // include "../../private_html/dev/php_files/visbus.php";
      ?>
  </center>
  <div class="container-fluid">
   <h1>My First Bootstrap Page</h1>
   <p>This is some text.</p>
 </div>
+<div class="empty-div">
+    <div id="id_groenblok" class="green-div"></div>
+</div>
 
- <p class="demo11" id="demo11"></p>
+<button onclick="draaien()">Try it</button>
 
-    <script src="/js/script.js"></script>
+<p class="visbus" id="visbus"></p>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>

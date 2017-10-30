@@ -1,5 +1,23 @@
-.demo11 {
+.visbus {
 background-color: green;
 color: white;
 margin: 10%;
+}
+div.empty-div {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: 30px;
+    padding: 10px;
+    border: 1px solid black;
+}
+div.green-div {
+    padding: 50px;
+    position: absolute;
+    background-color: #8bc34a;
+    border: 1px solid white;
+    /*transform: rotate(15deg);*/
+    /*transform-origin: 25% 75%;*/
+    /*-webkit-transform: rotate(15deg);*/
+    /*-webkit-transform-origin: 25% 75%;*/
 }
