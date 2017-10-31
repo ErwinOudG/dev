@@ -1,3 +1,8 @@
+.container-fluid {
+    height: 100vh;
+    text-align: center;
+}
+
 .visbus {
 background-color: green;
 color: white;
@@ -5,8 +10,8 @@ margin: 10%;
 }
 div.empty-div {
     position: relative;
-    height: 100px;
-    width: 100px;
+    height: 1000px;
+    width: 1000px;
     margin: 30px;
     padding: 10px;
     border: 1px solid black;
@@ -16,8 +21,39 @@ div.green-div {
     position: absolute;
     background-color: #8bc34a;
     border: 1px solid white;
-    /*transform: rotate(15deg);*/
-    /*transform-origin: 25% 75%;*/
-    /*-webkit-transform: rotate(15deg);*/
-    /*-webkit-transform-origin: 25% 75%;*/
+    /*transform: rotate(15deg);
+    transform-origin: 25% 75%;
+    -webkit-transform: rotate(15deg);
+    -webkit-transform-origin: 25% 75%;*/
 }
+#id_groenblok  {
+    padding: 50px;
+    position: relative;
+    background-color: #8bc34a;
+    border: 1px solid white;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin:-60px 0 0 -60px;
+}
+    #id_groenblokbak  {
+        padding: 50px;
+        position: relative;
+        background-color: #8bc34a;
+        border: 1px solid white;
+        top: 50%;
+        left: 50%;
+        width: 120px;
+        height: 120px;
+        margin:-60px 0 0 -60px;
+    -webkit-animation:spin 4s linear infinite alternate backwards;
+    -moz-animation:spin 4s linear infinite alternate backwards;
+    animation:spin 10s linear 2 alternate backwards;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin {
+    0% {top: 90%;left: 10%;}
+    50% {top: 10%;left: 50%;}
+    100% {top: 90%;left: 90%; -webkit-transform: rotate(3600deg); transform:rotate(3600deg); } }

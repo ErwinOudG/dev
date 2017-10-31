@@ -1,35 +1,30 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
   <head>
     <title>Hello, world!</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/css/style.css">
-
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  </head>
-  <body>
-      <center>
-    <h1>Hello, world!</h1>
-    <?php
-    include "../../private_html/dev/php_files/track.php";
-    // include "../../private_html/dev/php_files/visbus.php";
-     ?>
- </center>
- <div class="container-fluid">
-  <h1>My First Bootstrap Page</h1>
-  <p>This is some text.</p>
-</div>
-<div class="empty-div">
-    <div id="id_groenblok" class="green-div"></div>
-</div>
+    </head>
 
-<button onclick="draaien()">Try it</button>
 
-<p class="visbus" id="visbus"></p>
+    <body>
+        <center>
+            <?php
+                include "../../private_html/dev/php_files/track.php";
+                // include "../../private_html/dev/php_files/visbus.php";
+            ?>
+        </center>
+    <div class="container-fluid">
+        <div id="id_groenblok" class="green-div">Groen</div>
+    </div>
+
+<!-- <button onclick="draaien()">Try it</button> -->
+
+<!-- <p class="visbus" id="visbus"></p> -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
