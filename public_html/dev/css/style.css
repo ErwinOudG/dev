@@ -27,6 +27,7 @@ div.green-div {
     -webkit-transform-origin: 25% 75%;*/
 }
 #id_groenblok  {
+    text-align: center;
     padding: 50px;
     position: relative;
     background-color: #8bc34a;
